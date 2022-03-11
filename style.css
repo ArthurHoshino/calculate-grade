@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto Mono", sans-serif;
+}
+
+html {
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+    font-size: 62.5%;
+}
+
+body {
+    background: #5E5E5E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.explanation {
+    padding: 120px;
+    font-size: clamp(16px, 2.3rem, 2vw);
+}
+
+input {
+    height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input[type=number] {
+    width: clamp(160px, 32rem, 20vw);
+    margin-right: 16px;
+
+    outline: none;
+
+    background: #D4D4D4;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=button] {
+    width: clamp(100px, 20rem, 7vw);
+    background: #2E6FD9;
+
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type=button]:hover {
+    opacity: 0.8;
+}

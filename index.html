@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <div>
+
+        <div class="explanation">
+            <h1>Grade Calculator</h1>
+
+            <p>* Calculates a students grade from 0 to 100 and the minimum grade to pass is 40</p>
+            <p>* If the difference between the grade and the next multiple of 5 is less then 3, grade is rounded up to the next multiple of 5</p>
+
+        </div>
+
+        <form onsubmit="calculateGrade()">
+            <input type="number" placeholder="Type grade here" id="someoneGrade">
+            <input type="button" onclick="calculateGrade()" value="Submit">
+        </form>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
